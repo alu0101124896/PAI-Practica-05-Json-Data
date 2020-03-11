@@ -77,19 +77,18 @@ Haga que su programa imprima una línea adicional:
 
 'Los 5 países con mayor número de casos diagnosticados de Covid-19 en cada contienente son:`
 
-en la que se presenten los 5 países con más casos y el número de casos en cada uno de ellos.
-
+en la que se muestren los 5 países con más casos y el número de ellos en cada uno de esos países.
 
 ### Rúbrica de evaluacion del ejercicio
 
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva)
 que se tendrán en cuenta a la hora de evaluar este ejercicio:
 1. El comportamiento del programa debe ajustarse a lo solicitado en este enunciado.
-2. Deben usarse estructuras de datos adecuadas (objetos, arrays, strings) para representar los diferentes elementos que intervienen en el problema.
+2. Deben usarse estructuras de datos adecuadas para representar los diferentes elementos que intervienen en el problema.
 3. Capacidad del programador(a) de introducir cambios en el programa desarrollado.
 4. El formato del código ha de cumplir con lo establecido en la [Guía de Estilo de Google](https://google.github.io/styleguide/jsguide.html)
 para Javascript. Utilice [ESLint](https://eslint.org/), convenientemente configurado, si se considera necesario para cumplir con este requisito.
-5. El código ha de estar documentado con [JSDoc](https://jsdoc.app/). Haga que la documentación del programa generada con JSDoc esté disponible a través de una página web alojada en su máquina IaaS de la asignatura.
+5. El código ha de estar documentado con [JSDoc](https://jsdoc.app/). Haga que la documentación del programa generada con JSDoc esté disponible a través de una web alojada en su máquina IaaS de la asignatura.
 6. Modularidad: el programa ha de escribirse de modo que las diferentes funcionalidades
 que se precisen sean encapsuladas en módulos, funciones y métodos cuya extensión léxica se
 mantenga acotada.
