@@ -13,32 +13,31 @@ población, etc.
 Utilice el [visualizador on-line de JSON](http://jsonviewer.stack.hu/) para una primera toma de contacto con
 esos datos.
 
-Comience por escribir diferentes módulos (ficheros `.js`), un módulo para cada tipología de datos, en los que se incluyan en
+Comience por escribir diferentes módulos (ficheros `.js`), uno para cada tipología de datos, en los que se incluyan en
 forma de variables la información por países correspondiente a un determinado aspecto (idioma, religión, etc.)
 de cada país.
-Así por ejemplo el fichero `countryReligion.js` debería contener una variable que almacenara los datos de
-religión de cada uno de los países.
-Ese fichero (módulo) debería exportar esa variable para hacerla disponible a otros programas JavaScript.
+Así por ejemplo el módulo `country-population.js` debería contener una variable (variable, constante, objeto, ...) que almacenara los datos de población de cada uno de los países.
+Ese módulo debería exportar esa variable para hacerla disponible a otros programas JavaScript.
 
-Desarrolle a continuación un programa `countryData.js`que permita combinar en un único fichero `countryData.json` un conjunto de métricas
+Desarrolle a continuación un programa `combine-country-data.js`que permita combinar en un único fichero `country-data.json` un conjunto de métricas
 para todos los países considerados.
-Haga que ese fichero `countryData.json` contenga al menos la siguiente información para cada uno de los
+Haga que ese fichero `country-data.json` contenga al menos la siguiente información para cada uno de los
 países:
 
-* Nombre
-* Abreviatura del nombre
-* Altura promedio de los varones (Avg Male Height)
-* Capital de cada país
-* Continente
-* Moneda
-* Código de la moneda
-* Religión
-* Altura
-* Esperanza de vida
-* Número de habitantes
-* Densidad de Población
-* Superficie
-* Temperatura promedio
+1. Nombre
+2. Abreviatura del nombre
+3. Altura promedio de los varones (Avg Male Height)
+4. Capital de cada país
+5. Continente
+6. Moneda
+7. Código de la moneda
+8. Religión
+9. Altura
+10. Esperanza de vida
+11. Número de habitantes
+12. Densidad de Población
+13. Superficie
+14. Temperatura promedio
 
 Utilice nuevamente el [visualizador on-line de JSON](http://jsonviewer.stack.hu/) para mostrar el contenido
 del fichero JSON que ha creado.
@@ -46,18 +45,16 @@ del fichero JSON que ha creado.
 Desarrolle como siguiente paso un programa `contryStats.js` que utilice los datos que ha agregado para
 imprimir en pantalla la información que da respuesta a las siguientes cuestiones:
 
-* El país más poblado del mundo es P y el menos poblado es P.
-* El país con mayor densidad de población en América es P.
-* Los 3 países con mayor esperanza de vida en cada uno de los continentes son: ...
-* La media de la altura promedio de los varones en cada uno de los continentes es: 
-* Los porcentajes correspondientes (en función del número de países con cada religión) a las 5 religiones más
+1. El país más poblado del mundo es P y el menos poblado es P.
+2. El país con mayor densidad de población en América es P.
+3. Los 3 países con mayor esperanza de vida en cada uno de los continentes son: ...
+4. La media de la altura promedio de los varones en cada uno de los continentes es: 
+5. Los porcentajes correspondientes (en función del número de países con cada religión) a las 5 religiones más
   extendidas en el mundo son:
-* Los países con más bajas temperaturas en cada uno de los continentes son los siguientes:
+6. Los países con más bajas temperaturas en cada uno de los continentes son los siguientes:
 
 Además de las anteriores, imprima los valores correspondientes a 3 aspectos adicionales de su elección que se
 puedan extraer de los datos suministrados.
-
-
 
 ### Rúbrica de evaluacion del ejercicio
 
