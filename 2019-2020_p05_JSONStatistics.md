@@ -65,11 +65,13 @@ puedan extraer de los datos suministrados.
 **5.-** Este punto es opcional. Desarrolle este punto solamente si los apartados anteriores le han ocupado no más de 4 horas de trabajo total.
 
 Es fácil actualmente conseguir datos actualizados sobre la expansión del Covid-19 a nivel mundial.
-[Este repositorio](https://github.com/alext234/coronavirus-stats) podría ser un ejemplo, aunque puede Ud. usar cualquire otra fuente públicamente disponible.
-En ese repositorio anterior [Este fichero](https://github.com/alext234/coronavirus-stats/blob/master/data/bnonews-international.csv) contiene el número de casos de Covid-19 por países actualizado diariemante.
+[Este repositorio](https://github.com/alext234/coronavirus-stats) podría ser un ejemplo, aunque puede Ud. usar cualquier otra fuente de datos públicamente disponible.
+En ese repositorio anterior [este fichero](https://github.com/alext234/coronavirus-stats/blob/master/data/bnonews-international.csv) contiene el número de casos de Covid-19 por países actualizado diariemante.
 Los datos de ese fichero parecen coincidir con los que está publicando la 
 [prensa nacional](https://elpais.com/sociedad/2020/03/06/actualidad/1583503629_010886.html?rel=friso-portada).
-Use esta fuente o cualquier otra para añadir al fichero `country-data.json` el número de casos de Covid-19 en la fecha actual.
+Use esta fuente o cualquier otra para añadir al fichero `country-data.json` el número de casos de Covid-19 en la fecha actual en cada país.
+
+Si necesita convertir un fichero en formato `.csv` a formato JSON es fácil tambien hallar convertidores on-line entre ambos tipos de formato. Puede usar [este](https://www.csvjson.com/csv2json), por ejemplo.
 
 Haga que su programa imprima una línea adicional:
 
