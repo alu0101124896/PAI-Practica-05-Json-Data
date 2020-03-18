@@ -1,10 +1,10 @@
 /**
- * @file pai-lab-05-basket-stats-03-game.js
+ * @file pai-lab-05-basket-stats-05-game.js
  * @author Sergio Tabares Hernández <alu0101124896@ull.edu.es>
  * @since Winter 2020
  * @summary University of La Laguna
  * @summary Computer Science - Interactive Aplication Programing
- * @description This program outputs the game id, the players keys and the team who atempted the most free throws
+ * @description This program outputs the game id, the players keys, the team who atempted the most free throws and
  */
 
 "use strict"
@@ -61,9 +61,9 @@ function moreFreeThrows(MATCH_DATA) {
   let hawksThrows = 0;
   for (let playersIterator = 0; playersIterator < MATCH_DATA.players.length; playersIterator++) {
     if (MATCH_DATA.players[playersIterator].teamName === "Pacers") {
-      pacersThrows += MATCH_DATA.players[playersIterator].freeThrowsAttempted;
+      pacersThrows += MATCH_DATA.players[playersIterator].freeThrowsAttempted
     } else if (MATCH_DATA.players[playersIterator].teamName === "Hawks") {
-      hawksThrows += MATCH_DATA.players[playersIterator].freeThrowsAttempted;
+      hawksThrows += MATCH_DATA.players[playersIterator].freeThrowsAttempted
     }
   }
   if (pacersThrows < hawksThrows) {
@@ -76,6 +76,21 @@ function moreFreeThrows(MATCH_DATA) {
 }
 
 /**
+ * @description Function that counts the players who made at least one assist
+ *
+ * @param {array} MATCH_DATA - Array of objects of data about match
+ */
+function atLeastOneAssist(MATCH_DATA) {
+  let playersAssistances = 0;
+  for (let playersIterator = 0; playersIterator < MATCH_DATA.players.length; playersIterator++) {
+    if (MATCH_DATA.players[playersIterator].assists > 0) {
+      playersAssistances++;
+    }
+  }
+  console.log('There were', playersAssistances, 'players that had at least one assist');
+}
+
+/**
  * @description Function that calls all upper functions
  */
 function main() {
@@ -85,6 +100,7 @@ function main() {
   playersProperties(MATCH_DATA);
   turnoversVsAssists(MATCH_DATA);
   moreFreeThrows(MATCH_DATA);
+  atLeastOneAssist(MATCH_DATA);
 }
 
 main();
