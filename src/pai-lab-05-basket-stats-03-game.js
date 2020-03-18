@@ -1,5 +1,5 @@
 /**
- * @file pai-lab-05-basket-stats-02-game.js
+ * @file pai-lab-05-basket-stats-03-game.js
  * @author Sergio Tabares Hernández <alu0101124896@ull.edu.es>
  * @since Winter 2020
  * @summary University of La Laguna
@@ -52,6 +52,20 @@ function turnoversVsAssists(MATCH_DATA) {
 }
 
 /**
+ * @description Function that compares turnovers and assists
+ *
+ * @param {array} MATCH_DATA - Array of objects of data about match
+ */
+function moreThanThreeFreeThrows(MATCH_DATA) {
+  console.log('Pacers players with more turnovers than assists:')
+  for (let playersIterator = 0; playersIterator < MATCH_DATA.players.length; playersIterator++) {
+    if ((MATCH_DATA.players[playersIterator].teamName === "Pacers") && (MATCH_DATA.players[playersIterator].turnovers > MATCH_DATA.players[playersIterator].assists)) {
+      console.log(MATCH_DATA.players[playersIterator].firstName, MATCH_DATA.players[playersIterator].lastName, 'has an assist to turnover ratio of', (MATCH_DATA.players[playersIterator].assists + ':' + MATCH_DATA.players[playersIterator].turnovers))
+    }
+  }
+}
+
+/**
  * @description Function that calls all upper functions
  */
 function main() {
@@ -60,6 +74,7 @@ function main() {
   matchId(MATCH_DATA);
   playersProperties(MATCH_DATA);
   turnoversVsAssists(MATCH_DATA);
+  moreThanThreeFreeThrows(MATCH_DATA);
 }
 
 main();
