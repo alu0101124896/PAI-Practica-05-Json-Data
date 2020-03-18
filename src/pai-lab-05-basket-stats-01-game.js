@@ -19,7 +19,7 @@ function matchId(MATCH_DATA) {
 }
 
 /**
- *
+ * @description Function that outputs the players keys
  *
  * @param {array} MATCH_DATA - Array of objects of data about match
  */
@@ -32,7 +32,7 @@ function playersProperties(MATCH_DATA) {
 }
 
 /**
- *
+ * @description Function that calls all upper functions
  */
 function main() {
   const MATCH_DATA = require('./20160502_Hawks-Pacers-game-data.js');
