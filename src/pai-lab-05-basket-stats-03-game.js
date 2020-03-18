@@ -56,12 +56,22 @@ function turnoversVsAssists(MATCH_DATA) {
  *
  * @param {array} MATCH_DATA - Array of objects of data about match
  */
-function moreThanThreeFreeThrows(MATCH_DATA) {
-  console.log('Pacers players with more turnovers than assists:')
+function moreFreeThrows(MATCH_DATA) {
+  let pacersThrows = 0;
+  let hawksThrows = 0;
   for (let playersIterator = 0; playersIterator < MATCH_DATA.players.length; playersIterator++) {
-    if ((MATCH_DATA.players[playersIterator].teamName === "Pacers") && (MATCH_DATA.players[playersIterator].turnovers > MATCH_DATA.players[playersIterator].assists)) {
-      console.log(MATCH_DATA.players[playersIterator].firstName, MATCH_DATA.players[playersIterator].lastName, 'has an assist to turnover ratio of', (MATCH_DATA.players[playersIterator].assists + ':' + MATCH_DATA.players[playersIterator].turnovers))
+    if (MATCH_DATA.players[playersIterator].teamName === "Pacers") {
+      pacersThrows += MATCH_DATA.players[playersIterator].freeThrowsAttempted
+    } else if (MATCH_DATA.players[playersIterator].teamName === "Hawks") {
+      hawksThrows += MATCH_DATA.players[playersIterator].freeThrowsAttempted
     }
+  }
+  if (pacersThrows < hawksThrows) {
+    console.log('Hawks attempted the most free throws... Pacers:', pacersThrows, 'Hawks:', hawksThrows);
+  } else if (pacersThrows > hawksThrows) {
+    console.log('Pacers attempted the most free throws... Pacers:', pacersThrows, 'Hawks:', hawksThrows);
+  } else {
+    console.log('Both attempted the same free throws... Pacers:', pacersThrows, 'Hawks:', hawksThrows);
   }
 }
 
@@ -74,7 +84,7 @@ function main() {
   matchId(MATCH_DATA);
   playersProperties(MATCH_DATA);
   turnoversVsAssists(MATCH_DATA);
-  moreThanThreeFreeThrows(MATCH_DATA);
+  moreFreeThrows(MATCH_DATA);
 }
 
 main();
