@@ -1,0 +1,3 @@
+[submodule "country-json"]
+	path = country-json
+	url = git@github.com:samayo/country-json.git
