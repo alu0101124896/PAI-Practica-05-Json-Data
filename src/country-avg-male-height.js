@@ -1,3 +1,12 @@
-const COUNTRY_AVG_MALE_HEIGHT = require('../country-json/src/country-by-avg-male-height.json');
+/**
+ * @file country-avg-male-height.js
+ * @author Sergio Tabares Hernández <alu0101124896@ull.edu.es>
+ * @since Winter 2020
+ * @summary University of La Laguna
+ * @summary Computer Science - Interactive Aplication Programing
+ * @description This program exports the content of the country-by-avg-male-height.json file
+ */
 
-module.exports.COUNTRY_AVG_MALE_HEIGHT = COUNTRY_AVG_MALE_HEIGHT;
+"use strict"
+
+module.exports.COUNTRY_AVG_MALE_HEIGHT = require('../country-json/src/country-by-avg-male-height.json');

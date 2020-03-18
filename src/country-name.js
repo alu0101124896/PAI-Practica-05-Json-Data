@@ -1,5 +1,12 @@
-// const COUNTRY_NAME = require('../country-json/src/country-by-name.json');
+/**
+ * @file country-name.js
+ * @author Sergio Tabares Hernández <alu0101124896@ull.edu.es>
+ * @since Winter 2020
+ * @summary University of La Laguna
+ * @summary Computer Science - Interactive Aplication Programing
+ * @description This program exports the content of the country-by-name.json file
+ */
 
-// module.exports.COUNTRY_NAME = COUNTRY_NAME;
+"use strict"
 
 module.exports.COUNTRY_NAME = require('../country-json/src/country-by-name.json');
