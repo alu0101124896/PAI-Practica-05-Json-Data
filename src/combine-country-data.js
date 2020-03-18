@@ -12,7 +12,7 @@
 /**
  * @description Function that adds the names to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countryNames(countries) {
   const NAME_MODULE = require('./country-name.js');
@@ -24,7 +24,7 @@ function countryNames(countries) {
 /**
  * @description Function that adds the abbreviations to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countryAbbreviations(countries) {
   const ABBREVIATION_MODULE = require('./country-abbreviation.js');
@@ -42,7 +42,7 @@ function countryAbbreviations(countries) {
 /**
  * @description Function that adds the average male heights to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countryAvgMaleHeights(countries) {
   const AVG_MALE_HEIGHT_MODULE = require('./country-avg-male-height.js');
@@ -60,7 +60,7 @@ function countryAvgMaleHeights(countries) {
 /**
  * @description Function that adds the capital cities to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countryCapitalCities(countries) {
   const CAPITAL_CITY_MODULE = require('./country-capital-city.js');
@@ -78,7 +78,7 @@ function countryCapitalCities(countries) {
 /**
  * @description Function that adds the continents to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countryContinents(countries) {
   const CONTINENT_MODULE = require('./country-continent.js');
@@ -96,7 +96,7 @@ function countryContinents(countries) {
 /**
  * @description Function that adds the currency names to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countryCurrencyNames(countries) {
   const CURRENCY_NAME_MODULE = require('./country-currency-name.js');
@@ -114,7 +114,7 @@ function countryCurrencyNames(countries) {
 /**
  * @description Function that adds the currency codes to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countryCurrencyCodes(countries) {
   const CURRENCY_CODE_MODULE = require('./country-currency-code.js');
@@ -132,7 +132,7 @@ function countryCurrencyCodes(countries) {
 /**
  * @description Function that adds the religions to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countryReligions(countries) {
   const RELIGION_MODULE = require('./country-religion.js');
@@ -150,7 +150,7 @@ function countryReligions(countries) {
 /**
  * @description Function that adds the elevations to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countryElevations(countries) {
   const ELEVATION_MODULE = require('./country-elevation.js');
@@ -168,7 +168,7 @@ function countryElevations(countries) {
 /**
  * @description Function that adds the life expectancies to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countryLifeExpectancies(countries) {
   const LIFE_EXPECTANCY_MODULE = require('./country-life-expectancy.js');
@@ -186,7 +186,7 @@ function countryLifeExpectancies(countries) {
 /**
  * @description Function that adds the populations to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countryPopulations(countries) {
   const POPULATION_MODULE = require('./country-population.js');
@@ -204,7 +204,7 @@ function countryPopulations(countries) {
 /**
  * @description Function that adds the population densities to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countryPopulationDensities(countries) {
   const POPULATION_DENSITY_MODULE = require('./country-population-density.js');
@@ -222,7 +222,7 @@ function countryPopulationDensities(countries) {
 /**
  * @description Function that adds the surface areas to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countrySurfaceAreas(countries) {
   const SURFACE_AREA_MODULE = require('./country-surface-area.js');
@@ -240,7 +240,7 @@ function countrySurfaceAreas(countries) {
 /**
  * @description Function that adds the yearly average temperatures to the countries array
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function countryYearlyAvgTemperatures(countries) {
   const YEARLY_AVG_TEMPERATURE_MODULE = require('./country-yearly-avg-temperature.js');

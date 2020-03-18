@@ -12,7 +12,7 @@
 /**
  * @description Function that calculates the most and least populated countries
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function mostAndLeastPopulated(COUNTRIES) {
   let largestPopulation = COUNTRIES[0].population;
@@ -35,7 +35,7 @@ function mostAndLeastPopulated(COUNTRIES) {
 /**
  * @description Function that calculates the country with the highest population density in America
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function highestPopulationDensityOn(COUNTRIES) {
   let highestPopulationDensity = 0;
@@ -52,7 +52,7 @@ function highestPopulationDensityOn(COUNTRIES) {
 /**
  * @description Function that calculates the 3 countries with the highest life expectancy
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function highestLifeExpectancy(COUNTRIES) {
   let africaFirst = 0; let africaSecond = 0; let africaThird = 0; let africaFirstIterator; let africaSecondIterator; let africaThirdIterator;
@@ -142,7 +142,7 @@ function highestLifeExpectancy(COUNTRIES) {
 /**
  * @description Function that calculates the mean of the average male heigh on every continent
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function avgMaleHeightMean(COUNTRIES) {
   let africa = 0; let africaTotal = 0;
@@ -184,7 +184,7 @@ function avgMaleHeightMean(COUNTRIES) {
 /**
  * @description Function that calculates the 5 most extended religions in the world
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function mostExtendedReligions(COUNTRIES) {
 
@@ -193,7 +193,7 @@ function mostExtendedReligions(COUNTRIES) {
 /**
  * @description Function that calculates the lowest temperature on every continent
  *
- * @param {block} countries - Array of blocks of countries with json format
+ * @param {array} countries - Array of objects of countries with json format
  */
 function lowestTemperatures(COUNTRIES) {
   let africa = 10000; let africaIterator = 0;
