@@ -1,10 +1,10 @@
 /**
- * @file pai-lab-05-basket-stats-04-game.js
+ * @file pai-lab-05-basket-stats-05-game.js
  * @author Sergio Tabares Hernández <alu0101124896@ull.edu.es>
  * @since Winter 2020
  * @summary University of La Laguna
  * @summary Computer Science - Interactive Aplication Programing
- * @description This program outputs the game id, the players keys, the team who atempted the most free throws and the number of player who did at least one assist
+ * @description This program outputs the game id, the players keys, the team who atempted the most free throws, the number of player who did at least one assist and the player with highest 3 poit percentage
  */
 
 "use strict"
@@ -91,6 +91,23 @@ function atLeastOneAssist(MATCH_DATA) {
 }
 
 /**
+ * @description Function that tels the player with highest 3 poit percentage
+ *
+ * @param {array} MATCH_DATA - Array of objects of data about match
+ */
+function highestThreePoitPercentage(MATCH_DATA) {
+  let highestThreePoitPercentage = 0;
+  let highestThreePoitPercentagePlayer = 0;
+  for (let playersIterator = 0; playersIterator < MATCH_DATA.players.length; playersIterator++) {
+    if ((MATCH_DATA.players[playersIterator].positionFull === "Guard") && ((MATCH_DATA.players[playersIterator].threePointersAttempted / MATCH_DATA.players[playersIterator].threePointersMade) > highestThreePoitPercentage)) {
+      highestThreePoitPercentage = MATCH_DATA.players[playersIterator].threePointersAttempted / MATCH_DATA.players[playersIterator].threePointersMade;
+      highestThreePoitPercentagePlayer = playersIterator;
+    }
+  }
+  console.log('Guard (G) with highest 3 point percentage:', MATCH_DATA.players[highestThreePoitPercentagePlayer].firstName, MATCH_DATA.players[highestThreePoitPercentagePlayer].lastName, 'at', (highestThreePoitPercentage * 100) + '%');
+}
+
+/**
  * @description Function that calls all upper functions
  */
 function main() {
@@ -101,6 +118,7 @@ function main() {
   turnoversVsAssists(MATCH_DATA);
   moreFreeThrows(MATCH_DATA);
   atLeastOneAssist(MATCH_DATA);
+  highestThreePoitPercentage(MATCH_DATA);
 }
 
 main();
