@@ -1,10 +1,10 @@
 /**
- * @file country-life-expectancy.js
+ * @file pai-lab-05-basket-stats-01-game.js
  * @author Sergio Tabares Hernández <alu0101124896@ull.edu.es>
  * @since Winter 2020
  * @summary University of La Laguna
  * @summary Computer Science - Interactive Aplication Programing
- * @description This program combines the data about COUNTRIES stored in the json files on country-json/src folder
+ * @description This program outputs the game id and the players keys
  */
 
 "use strict"
