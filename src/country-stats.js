@@ -4,7 +4,7 @@
  * @since Winter 2020
  * @summary University of La Laguna
  * @summary Computer Science - Interactive Aplication Programing
- * @description This program combines the data about COUNTRIES stored in the json files on country-json/src folder
+ * @description This program shows selected data about COUNTRIES stored in the json files on country-json/src folder
  */
 
 "use strict"
